@@ -1,0 +1,1 @@
+process.env.__MOCK_API__ = true

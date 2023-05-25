@@ -1,0 +1,1 @@
+export { pokemonsService } from './pokemonsService';

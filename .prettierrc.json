@@ -1,0 +1,22 @@
+{
+  "singleQuote": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "htmlWhitespaceSensitivity": "ignore",
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*.{css,scss}",
+      "options": {
+        "printWidth": 300
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ]
+}

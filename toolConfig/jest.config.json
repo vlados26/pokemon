@@ -1,0 +1,22 @@
+{
+  "testEnvironment": "jsdom",
+  "coveragePathIgnorePatterns": ["/node_modules/"],
+  "rootDir": "../",
+  "setupFiles": ["./toolConfig/jest.setup.js", "<rootDir>/toolConfig/jest.globals.js"],
+  "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"],
+  "collectCoverageFrom": ["src/**/*{js,jsx,ts,tsx}", "!src/main.tsx"],
+  "preset": "ts-jest",
+  "moduleNameMapper": {
+    "^.+\\.(css|scss)$": "<rootDir>/config/CSSStub.js",
+    "@/(.*)": "<rootDir>/src/$1"
+  },
+  "transform": {
+    "^.+\\.(j|t)sx?$": "ts-jest"
+  },
+  "testMatch": [
+    "<rootDir>/src/**/*.test.js",
+    "<rootDir>/src/**/*.test.ts",
+    "<rootDir>/src/**/*.test.tsx"
+  ],
+  "transformIgnorePatterns": ["<rootDir>/node_modules/"]
+}
